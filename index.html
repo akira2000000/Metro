@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Respira y Sigue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--Boton para subir al vagon-->
+  <a id="enlace-final" href="PrimerBucle1/index.html">
+    <img src="imagenes/icono.png" alt="Ícono">
+</a>
+
+  <!--Sonido del vagon llegando-->
+  <audio id="background-audio" autoplay loop muted>
+    <source src="audio/la_llegada.mp3" type="audio/mpeg">
+</audio>
+
+  <!-- Pantalla de introducción con video -->
+  <div class="intro-screen">
+    <video id="intro-video" autoplay muted playsinline>
+      <source src="video/intro.mp4" type="video/mp4">
+      Tu navegador no soporta videos.
+    </video>
+  </div>
+
+  <!-- Galería de imágenes desplazable -->
+  <div class="scrolling-row">
+    <div class="scrollable">
+      <img src="imagenes/3.png" class="scrolling-image">
+      <img src="imagenes/4.png" class="scrolling-image">
+      <img src="imagenes/5.png" class="scrolling-image">
+      <img src="imagenes/6.png" class="scrolling-image">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
